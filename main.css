@@ -1,20 +1,32 @@
+
+li {
+    list-style: none;
+    float: left;
+    padding: 32px 20px;
+}
+
 .header {
+    background-color: white;
+    height: 90px;
     position: fixed;
 }
 
-.logo {
+.header-logo {
     float: left;
-    padding: 10px;
+    font-size: 36px;
+    padding: 20px 40px;
 }
 
-li {
-    padding: 10px;
-    list-style: none;
+.header-list {
     float: left;
+}
+
+.main {
+
 }
 
 .footer {
+    background-color: white;
+    height: 90px;
     position: fixed;
-    padding: 20px;
-    float: left;
 }

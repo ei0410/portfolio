@@ -9,13 +9,31 @@
 </head>
 <body>
     <div id="app">
+
         <div class="header">
-            <ul>
-                <h1 class="logo">ei0124's Portfolio</h1>
-                <li v-for="item in contentslist">{{item}}</li>
-            </ul>
+
+            <div class="header-logo">ei0124's Portfolio</div>
+            <div class="header-list">
+                <ul>
+                    <li v-for="item in contentslist">{{item}}</li>
+                </ul>
+            </div>
         </div>
+
+        <div class="main">
+
+        </div>
+
+        <div class="footer">
+            <!--
+            <ul>
+                <li v-for="item in linklist">{{item}}</li>
+            </ul>
+            -->
+        </div>
+
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
 </body>
