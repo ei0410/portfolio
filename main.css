@@ -22,11 +22,14 @@ li {
 }
 
 .main {
-
+    height: 600px;
 }
 
 .footer {
     background-color: white;
-    height: 90px;
-    position: fixed;
+    height: 270px;
+}
+
+.footer-list {
+    float: right;
 }
