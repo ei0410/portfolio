@@ -9,7 +9,6 @@
 </head>
 <body>
     <div id="app">
-
         <div class="header">
             <div class="header-logo">ei0124 Portfolio</div>
             <div class="header-list">
@@ -19,9 +18,11 @@
             </div>
         </div>
 
+        <img src="./images/jigglypuffs.png">
+
         <div class="main">
-            <div class="about">
-                <a id="about">
+            <div class="cabout">
+                <a name="about">
                     <h2 class="section-style">About</h2>
                 </a>
                 <table>
@@ -44,50 +45,41 @@
                 </table>
             </div>
 
-            <div class="skills">
-
+            <div class="cskills">
                 <a id="skills">
                     <h2 class="section-style">Skills</h2>
                 </a>
-                
-                <div v-for="item in hard">
-                    <div class="hard">
-                        <p>{{item.lang}}</p>
-                        <img v-bind:src="item.src">
-                        <p>{{item.comment}}</p>
-                    </div>
-                </div>
-                
-                <div v-for="item in languages">
-                    <div class="languages">
-                        <p>{{item.lang}}</p>
-                        <img v-bind:src="item.src">
-                        <p>{{item.comment}}</p>
-                    </div>
-                </div>
             </div>
 
-            <div class="events">
-
+            <div class="cevents">
                 <a id="events">
                     <h2 class="section-style">Events</h2>
                 </a>
                 <table>
                     <tr>
                         <th>Robocon</th>
-                        <th>2015, 2016, 2017（出場は無し）</th>
+                        <th>
+                            <p>2015</p>
+                            <p>2016</p>
+                            <p>2017</p>
+                        </th>
                     </tr>
                     <tr>
                         <th>Seccamp</th>
-                        <th>2018（参加）, 2019（チューター）, 2019福岡（チューター）, 2019長崎（チューター）</th>
+                        <th>
+                            <p>2018全国（参加）</p>
+                            <p>2019全国（チューター）</p>
+                            <p>2019福岡（チューター）</p>
+                            <p>2019長崎（チューター）</p>
+                        </th>
                     </tr>
                     <tr>
                         <th>CodeBlue</th>
-                        <th>2019（学生スタッフ）</th>
+                        <th>2019（学スタ）</th>
                     </tr>
                     <tr>
                         <th>JPHacks</th>
-                        <th>2018（福岡）</th>
+                        <th>2018福岡</th>
                     </tr>
                     <tr>
                         <th>AtCoder</th>
@@ -100,14 +92,15 @@
                 </table>
             </div>
 
-            <div class="works">
+            <div class="cworks">
                 <a id="works">
                     <h2 class="section-style">Works</h2>
                 </a>
             </div>
 
-            <div class="interests">
+            <div class="cinterests">
                 <a id="interests">
+
                     <h2 class="section-style">Interests</h2>
                 </a>
                 <table>
@@ -137,19 +130,6 @@
                     </tr>
                 </table>
             </div>
-
-            <!--
-            <div v-for="item in contentslist">
-                <div class="contents">
-                    <a name="item.text">
-                        <h3>
-                            {{item.text}}
-                        </h3>
-                    </a>
-                </div>
-            </div>
-            -->
-
         </div>
 
         <div class="footer">
@@ -160,9 +140,7 @@
                 </ul>
             </div>
         </div>
-
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
 </body>
