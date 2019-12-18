@@ -20,19 +20,84 @@
         </div>
 
         <div class="main">
-            <div v-for="item in contentslist">
-                <a name="item.text">
-                    <h3>
-                        {{item.text}}
-                    </h3>
+            <div class="about">
+                <a id="about">
+
+                    <h2 class="section-style">About</h2>
+                </a>
+                <table>
+                    <tr>
+                        <th>name</th>
+                        <th>ei0124</th>
+                    </tr>
+                    <tr>
+                        <th>birthday</th>
+                        <th>1996/4/10</th>
+                    </tr>
+                    <tr>
+                        <th>study</th>
+                        <th>robotics</th>
+                    </tr>
+                    <tr>
+                        <th>email</th>
+                        <th>chronolavos0124[at]gmail.com</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="skills">
+
+                <a id="skills">
+                    <h2 class="section-style">Skills</h2>
+                </a>
+                <h3>HardWare</h3>
+                <h3>Electronics</h3>
+                <h3>Programing Lauguages</h3>
+                <div v-for="item in languages">
+                    <div class="languages">
+                        <p>{{item.lang}}</p>
+                        <img v-bind:src="item.src">
+                        <p>{{item.comment}}</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="works">
+                <a id="works">
+                    <h2 class="section-style">Works</h2>
                 </a>
             </div>
+            <div class="events">
+                <a id="events">
+                    <h2 class="section-style">Events</h2>
+                </a>
+            </div>
+            <div class="interests">
+                <a id="interests">
+                    <h2 class="section-style">Interests</h2>
+                </a>
+            </div>
+            -->
+
+            <!--
+            <div v-for="item in contentslist">
+                <div class="contents">
+                    <a name="item.text">
+                        <h3>
+                            {{item.text}}
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            -->
+
         </div>
 
         <div class="footer">
+            <div class="footer-logo">Links</div>
             <div class="footer-list">
                 <ul>
-                    <li v-for="item in linklist"><a v-bind:href="item.url" target="_blank">{{item.text}}</a></li>
+                    <li v-for="item in linklist"><a v-bind:href="item.url" target="_blank"><img v-bind:src="item.src" alt="TAG index" border="0"></a></li>
                 </ul>
             </div>
         </div>
