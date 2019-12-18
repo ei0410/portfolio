@@ -65,17 +65,10 @@ table th,table td{
     padding: 10px;
 }
 
-.skillitems {
-    float: left;
-}
-
-.skillitems img {
+.imgs {
     width: 150px;
     height: 150px;
-}
-
-.skillitems p {
-    width: 150px;
+    padding: 10px;
 }
 
 .acolor {
@@ -84,6 +77,10 @@ table th,table td{
 
 .ccolor {
     background-color: #99FFFF;
+}
+
+.center {
+    text-align: center;
 }
 
 .footer {
