@@ -24,7 +24,7 @@ var app = new Vue({
             { url: "https://twitter.com/ei01241", src: "./images/Twitter.png" },
             { url: "https://instagram.com/ei01241", src: "./images/Instagram.png" },
             { url: "https://www.facebook.com/profile.php?id=100040398917098", src: "./images/Facebook.png" },
-            { url: "https://github.com/ei0410", src: "./images/Github.png" },
+            { url: "https://github.com/ei0410", src: "./images/GitHub.png" },
             { url: "http://ei0124.blog.fc2.com", src: "./images/FC2.png" },
         ]
     }
