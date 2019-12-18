@@ -49,9 +49,15 @@
                 <a id="skills">
                     <h2 class="section-style">Skills</h2>
                 </a>
-
-                <h3>Hardware</h3>
-                <h3>Software</h3>
+                
+                <div v-for="item in hard">
+                    <div class="hard">
+                        <p>{{item.lang}}</p>
+                        <img v-bind:src="item.src">
+                        <p>{{item.comment}}</p>
+                    </div>
+                </div>
+                
                 <div v-for="item in languages">
                     <div class="languages">
                         <p>{{item.lang}}</p>
@@ -60,23 +66,77 @@
                     </div>
                 </div>
             </div>
-            <!--
+
+            <div class="events">
+
+                <a id="events">
+                    <h2 class="section-style">Events</h2>
+                </a>
+                <table>
+                    <tr>
+                        <th>Robocon</th>
+                        <th>2015, 2016, 2017（出場は無し）</th>
+                    </tr>
+                    <tr>
+                        <th>Seccamp</th>
+                        <th>2018（参加）, 2019（チューター）, 2019福岡（チューター）, 2019長崎（チューター）</th>
+                    </tr>
+                    <tr>
+                        <th>CodeBlue</th>
+                        <th>2019（学生スタッフ）</th>
+                    </tr>
+                    <tr>
+                        <th>JPHacks</th>
+                        <th>2018（福岡）</th>
+                    </tr>
+                    <tr>
+                        <th>AtCoder</th>
+                        <th class="acolor">highest 883</th>
+                    </tr>
+                    <tr>
+                        <th>Codeforces</th>
+                        <th class="ccolor">highest 1418</th>
+                    </tr>
+                </table>
+            </div>
+
             <div class="works">
                 <a id="works">
                     <h2 class="section-style">Works</h2>
                 </a>
             </div>
-            <div class="events">
-                <a id="events">
-                    <h2 class="section-style">Events</h2>
-                </a>
-            </div>
+
             <div class="interests">
                 <a id="interests">
                     <h2 class="section-style">Interests</h2>
                 </a>
+                <table>
+                    <tr>
+                        <th>筋トレ</th>
+                        <th>ほぼ毎日やってます．鍛えることが好きです．</th>
+                    </tr>
+                    <tr>
+                        <th>手品</th>
+                        <th>カードとコイン中心です．</th>
+                    </tr>
+                    <tr>
+                        <th>将棋，囲碁，麻雀</th>
+                        <th>物心付いた頃からやってます．</th>
+                    </tr>
+                    <tr>
+                        <th>料理</th>
+                        <th>お菓子が一番得意ですが，最近は家庭料理に移行してます．</th>
+                    </tr>
+                    <tr>
+                        <th>バイク旅</th>
+                        <th>原付でどこへでも出掛けます．</th>
+                    </tr>
+                    <tr>
+                        <th>アニメ</th>
+                        <th>宝島，攻殻機動隊，ジョジョが大好きです．</th>
+                    </tr>
+                </table>
             </div>
-            -->
 
             <!--
             <div v-for="item in contentslist">

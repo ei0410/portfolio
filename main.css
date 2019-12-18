@@ -24,6 +24,7 @@ table tr:hover{
 }
 
 table th,table td{
+  font-size: 20px;
   text-align: center;
   width: 25%;
   padding: 15px 0;
@@ -50,16 +51,26 @@ table th,table td{
 }
 
 .main {
-    height: 2000px;
+    height: 4000px;
 }
 
 .section-style {
-    border-top: 2px solid #333;
+    border-top: 3px solid #333;
+    padding: 10px;
 }
 
 .skills img {
     width: 150px;
     height: 150px;
+}
+
+.hard {
+    float: left;
+    padding: 10px;
+}
+
+.hard p {
+    width: 150px;
 }
 
 .languages {
@@ -69,6 +80,14 @@ table th,table td{
 
 .languages p {
     width: 150px;
+}
+
+.acolor {
+    background-color: #00FF99;
+}
+
+.ccolor {
+    background-color: #99FFFF;
 }
 
 .footer {
@@ -87,7 +106,7 @@ table th,table td{
 }
 
 .footer img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     padding: 10px;
 }
