@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Example Portfolio</title>
+    <title>ei0124 Portfolio</title>
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello GitHub.io !</h1>
+    <div id="app">
+        <div class="header">
+            <ul>
+                <h1 class="logo">ei0124's Portfolio</h1>
+                <li v-for="item in contentslist">{{item}}</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

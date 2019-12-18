@@ -1,0 +1,20 @@
+.header {
+    position: fixed;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+    float: left;
+}
+
+.footer {
+    position: fixed;
+    padding: 20px;
+    float: left;
+}
