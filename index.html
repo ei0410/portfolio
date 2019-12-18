@@ -50,16 +50,7 @@
                     <h1 class="section-style">Skills</h1>
                 </a>
                 <div>
-                    <img class="imgs" src="./images/Creo.png">
-                    <img class="imgs" src="./images/Kicad.png">
-                    <img class="imgs" src="./images/Blender.png">
-                    <img class="imgs" src="./images/C++.png">
-                    <img class="imgs" src="./images/Python.png">
-                    <img class="imgs" src="./images/Rails.png">
-                    <img class="imgs" src="./images/ROS.png">
-                    <img class="imgs" src="./images/Arduino.png">
-                    <img class="imgs" src="./images/Processing.png">
-                    <img class="imgs" src="./images/Verilog.png">
+                    <img v-for="item in languages" class="imgs" v-bind:src="item.src">
                 </div>
             </div>
 
@@ -150,7 +141,7 @@
             <div class="footer-logo">Links</div>
             <div class="footer-list">
                 <ul>
-                    <li v-for="item in linklist"><a v-bind:href="item.url" target="_blank"><img v-bind:src="item.src" alt="TAG index" border="0"></a></li>
+                    <li v-for="item in linklist"><a v-bind:href="item.url" target="_blank"><img v-bind:src="item.src" v-bind:alt="item.url" border="0"></a></li>
                 </ul>
             </div>
         </div>
