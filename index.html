@@ -11,7 +11,7 @@
     <div id="app">
 
         <div class="header">
-            <div class="header-logo">ei0124's Portfolio</div>
+            <div class="header-logo">ei0124 Portfolio</div>
             <div class="header-list">
                 <ul>
                     <li v-for="item in contentslist"><a v-bind:href="item.url">{{item.text}}</a></li>
@@ -22,7 +22,6 @@
         <div class="main">
             <div class="about">
                 <a id="about">
-
                     <h2 class="section-style">About</h2>
                 </a>
                 <table>
@@ -50,9 +49,9 @@
                 <a id="skills">
                     <h2 class="section-style">Skills</h2>
                 </a>
-                <h3>HardWare</h3>
-                <h3>Electronics</h3>
-                <h3>Programing Lauguages</h3>
+
+                <h3>Hardware</h3>
+                <h3>Software</h3>
                 <div v-for="item in languages">
                     <div class="languages">
                         <p>{{item.lang}}</p>

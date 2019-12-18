@@ -1,12 +1,11 @@
+a {
+    text-decoration: none;
+}
+
 li {
     list-style: none;
     float: left;
     padding: 32px 20px;
-}
-
-.skills img {
-    width: 200px;
-    height: 200px;
 }
 
 table{
@@ -46,6 +45,10 @@ table th,table td{
     float: right;
 }
 
+.header-list li {
+    font-size: 20px;
+}
+
 .main {
     height: 2000px;
 }
@@ -54,13 +57,18 @@ table th,table td{
     border-top: 2px solid #333;
 }
 
+.skills img {
+    width: 150px;
+    height: 150px;
+}
+
 .languages {
     float: left;
     padding: 10px;
 }
 
 .languages p {
-    width: 200px;
+    width: 150px;
 }
 
 .footer {

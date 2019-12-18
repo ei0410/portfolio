@@ -9,7 +9,7 @@ var app = new Vue({
             { url: "#interests", text: "Interests"},
         ],
         languages: [
-            { lang: "C/C++", src: "./images/C++.png", comment: "組み込みと競技プログラミングで使っています．一番好きです．"},
+            { lang: "C/C++", src: "./images/C++.png", comment: "組み込みと競技プログラミングで使っています．"},
             { lang: "Python", src: "./images/Python.png", comment: "自動化で使っています．機械学習は勉強中です．"},
             { lang: "Ruby on Rails", src: "./images/Rails.png", comment: "webのサーバーサイドフレームワークとして勉強中です．"},
             { lang: "Vue.js", src: "./images/Vue.png", comment: "webのフロントエンドフレームワークとして勉強中です．"},
