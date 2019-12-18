@@ -87,6 +87,9 @@ table th,table td{
     text-align: center;
 }
 
+.center img {
+    text-align: center;
+}
 
 .footer {
     background-color: white;
