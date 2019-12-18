@@ -14,13 +14,19 @@
             <div class="header-logo">ei0124's Portfolio</div>
             <div class="header-list">
                 <ul>
-                    <li v-for="item in contentslist">{{item}}</li>
+                    <li v-for="item in contentslist"><a v-bind:href="item.url">{{item.text}}</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="main">
-
+            <div v-for="item in contentslist">
+                <a name="item.text">
+                    <h3>
+                        {{item.text}}
+                    </h3>
+                </a>
+            </div>
         </div>
 
         <div class="footer">
