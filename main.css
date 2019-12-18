@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -83,9 +87,10 @@ table th,table td{
     text-align: center;
 }
 
+
 .footer {
     background-color: white;
-    height: 270px;
+    /*height: 320px;*/
 }
 
 .footer-logo {
