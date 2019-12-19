@@ -109,3 +109,43 @@ table th,table td{
     height: 80px;
     padding: 10px;
 }
+
+.cname {
+    color: gray;
+}
+
+.ccake {
+    color: maroon;
+}
+
+.cstudy {
+    color: navy;
+}
+
+.cemail {
+    color: skyblue;
+}
+
+.cmuscle {
+    color: olive;
+}
+
+.ctech {
+    color: silver;
+}
+
+.cmagic {
+    color: red;
+}
+
+.ccook {
+    color: brown;
+}
+
+.cbike {
+    color: black;
+}
+
+.canime {
+    color: black;
+}
