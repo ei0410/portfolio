@@ -50,7 +50,7 @@
                     <h1 class="section-style">Skills</h1>
                 </a>
                 <div>
-                    <img v-for="item in languages" class="imgs" v-bind:src="item.src">
+                    <a v-for="item in languages" v-bind:href="item.url" target="_blank"><img class="imgs" v-bind:src="item.src" v-bind:alt="item.url" border="0"></a>
                 </div>
             </div>
 
@@ -60,7 +60,7 @@
                 </a>
                 <table>
                     <tr>
-                        <th>Robocon</th>
+                        <th><a href="http://www.official-robocon.com" target="_blank">Robocon</a></th>
                         <th>
                             <p>2015</p>
                             <p>2016</p>
@@ -68,7 +68,7 @@
                         </th>
                     </tr>
                     <tr>
-                        <th>Seccamp</th>
+                        <th><a href="https://www.security-camp.or.jp" target="_blank">Seccamp</a></th>
                         <th>
                             <p>2018全国（参加）</p>
                             <p>2019全国（チューター）</p>
@@ -77,19 +77,19 @@
                         </th>
                     </tr>
                     <tr>
-                        <th>CodeBlue</th>
+                        <th><a href="https://codeblue.jp/2019/en" target="_blank">CodeBlue</a></th>
                         <th>2019（学スタ）</th>
                     </tr>
                     <tr>
-                        <th>JPHacks</th>
+                        <th><a href="https://jphacks.com" target="_blank">JPHacks</a></th>
                         <th>2018福岡</th>
                     </tr>
                     <tr>
-                        <th>AtCoder</th>
+                        <th><a href="https://atcoder.jp/?lang=ja" target="_blank">AtCoder</a></th>
                         <th class="acolor">highest 883</th>
                     </tr>
                     <tr>
-                        <th>Codeforces</th>
+                        <th><a href="https://codeforces.com" target="_blank">Codeforces</a></th>
                         <th class="ccolor">highest 1418</th>
                     </tr>
                 </table>
@@ -106,7 +106,7 @@
                     <h2>Electronics</h2>
                     <img src="./images/Circuit1.png">
                     <p>自作基板のモータードライバです．アナログ回路はこれで勉強しました．</p>
-                    <h2>Programing</h2>
+                    <h2>Programming</h2>
                     <img src="./images/Program1.png">
                     <p>アート作品の一つです．セルグリッドオートマトンと呼ばれるものです．</p>
                 </div>

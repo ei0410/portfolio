@@ -43,7 +43,6 @@ table th,table td{
 .header {
     background-color: white;
     height: 90px;
-    /*position: fixed;*/
 }
 
 .header-logo {
@@ -61,7 +60,6 @@ table th,table td{
 }
 
 .main {
-    /*height: 4000px;*/
 }
 
 .section-style {
@@ -93,7 +91,6 @@ table th,table td{
 
 .footer {
     background-color: white;
-    /*height: 320px;*/
 }
 
 .footer-logo {

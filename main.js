@@ -9,16 +9,17 @@ var app = new Vue({
             { url: "#interests", text: "Interests"},
         ],
         languages: [
-            { lang: "Creo", src: "./images/Creo.png", comment: "機械設計でよく使ってます．"},
-            { lang: "KiCAD", src: "./images/Kicad.png", comment: "回路設計と基板設計に使ってます．"},
-            { lang: "C/C++", src: "./images/C++.png", comment: "組み込みと競技プログラミングで使ってます．"},
-            { lang: "Python", src: "./images/Python.png", comment: "自動化で使ってます．機械学習は勉強中です．"},
-            { lang: "Ruby on Rails", src: "./images/Rails.png", comment: "サーバーサイドフレームワークとして勉強中です．"},
-            { lang: "Vue.js", src: "./images/Vue.png", comment: "フロントエンドフレームワークとして勉強中です．"},
-            { lang: "ROS", src: "./images/ROS.png", comment: "ロボット制御で使ってます．"},
-            { lang: "Arduino", src: "./images/Arduino.png", comment: "組み込みで簡単な制御をしたいときに使ってます．"},
-            { lang: "Processing", src: "./images/Processing.png", comment: "アート作品で使ってます．"},
-            { lang: "Verilog", src: "./images/Verilog.png", comment: "CPUを作るために勉強中です．"},
+            { lang: "Creo", src: "./images/Creo.png", url: "https://www.ptc.com/ja/products/cad/creo"},
+            { lang: "KiCAD", src: "./images/Kicad.png", url: "https://www.kicad-pcb.org"},
+            { lang: "Blender", src: "./images/Blender.png", url: "https://www.blender.org"},
+            { lang: "C/C++", src: "./images/C++.png", url: "https://www.kicad-pcb.org"},
+            { lang: "Python", src: "./images/Python.png", url: "https://www.python.jp"},
+            { lang: "Ruby on Rails", src: "./images/Rails.png", url: "https://rubyonrails.org"},
+            { lang: "Vue.js", src: "./images/Vue.png", url: "https://jp.vuejs.org/index.html"},
+            { lang: "ROS", src: "./images/ROS.png", url: "http://wiki.ros.org"},
+            { lang: "Arduino", src: "./images/Arduino.png", url: "https://www.arduino.cc"},
+            { lang: "Processing", src: "./images/Processing.png", url: "https://processing.org"},
+            { lang: "Verilog", src: "./images/Verilog.png", url: "https://ja.wikipedia.org/wiki/Verilog"},
         ],
         linklist: [
             { url: "https://twitter.com/ei01241", src: "./images/Twitter.png" },
@@ -29,25 +30,3 @@ var app = new Vue({
         ]
     }
 })
-
-
-/*
-var component = {
-　data: function(){
-　　　return {
-　　　　　count: 0
-　　　}
-  },
-  template: "<p>{{count}}<button @click='increment'>+1</button></p>",
-  methods: {
-    increment: function(){
-        this.count += 1;
-    }
-  }
-}
-    
-Vue.component("sample-component",component)
-new Vue({
-    el: "#app",
-})
-*/
