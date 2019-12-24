@@ -1,6 +1,14 @@
 var app = new Vue({
     el: '#app',
     data: {
+        countrank: 0,
+        sumrank: 0,
+
+        maxrating: 0,
+        maxrank: 0,
+        rating: 0,
+        rank: 0,
+
         contentslist: [
             { url: "#about", text: "About"},
             { url: "#skills", text: "Skills"},
@@ -8,6 +16,7 @@ var app = new Vue({
             { url: "#works", text: "Works"},
             { url: "#interests", text: "Interests"},
         ],
+
         languages: [
             { lang: "Creo", src: "./images/Creo.png", url: "https://www.ptc.com/ja/products/cad/creo"},
             { lang: "KiCAD", src: "./images/Kicad.png", url: "https://www.kicad-pcb.org"},
@@ -21,6 +30,7 @@ var app = new Vue({
             { lang: "Processing", src: "./images/Processing.png", url: "https://processing.org"},
             { lang: "Verilog", src: "./images/Verilog.png", url: "https://ja.wikipedia.org/wiki/Verilog"},
         ],
+
         linklist: [
             { url: "https://twitter.com/ei01241", src: "./images/Twitter.png" },
             { url: "https://instagram.com/ei01241", src: "./images/Instagram.png" },
@@ -28,5 +38,36 @@ var app = new Vue({
             { url: "https://github.com/ei0410", src: "./images/GitHub.png" },
             { url: "http://ei0124.blog.fc2.com", src: "./images/FC2.png" },
         ]
+    },
+    created () {
+        fetch('https://kenkoooo.com/atcoder/atcoder-api/v2/user_info?user=ei0124')
+        .then( response => {
+            return response.json()
+        })
+        .then( json => {
+            this.countrank = json.accepted_count_rank
+            this.sumrank = json.rated_point_sum_rank
+        })
+        .catch( (err) => {
+            this.countrank = err
+            this.sumrank = err
+        });
+
+        fetch('https://codeforces.com/api/user.info?handles=ei0124')
+        .then( response => {
+            return response.json()
+        })
+        .then( json => {
+            this.maxrating = json.result[0].maxRating,
+            this.rating = json.result[0].rating
+            this.maxrank = json.result[0].maxRank
+            this.rank = json.result[0].rank
+        })
+        .catch( (err) => {
+            this.maxrating = err
+            this.rating = err
+            this.maxrank = err
+            this.rank = err
+        });
     }
 })
