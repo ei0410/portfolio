@@ -1,13 +1,12 @@
 var app = new Vue({
     el: '#app',
     data: {
+        point: 0,
         countrank: 0,
         sumrank: 0,
 
         maxrating: 0,
         maxrank: 0,
-        rating: 0,
-        rank: 0,
 
         contentslist: [
             { url: "#about", text: "About"},
@@ -59,15 +58,11 @@ var app = new Vue({
         })
         .then( json => {
             this.maxrating = json.result[0].maxRating,
-            this.rating = json.result[0].rating
             this.maxrank = json.result[0].maxRank
-            this.rank = json.result[0].rank
         })
         .catch( (err) => {
             this.maxrating = err
-            this.rating = err
             this.maxrank = err
-            this.rank = err
         });
     }
 })
