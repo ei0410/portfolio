@@ -54,6 +54,23 @@
                 <div>
                     <a v-for="item in languages" v-bind:href="item.url" target="_blank"><img class="imgs" v-bind:src="item.src" v-bind:alt="item.url" border="0"></a>
                 </div>
+                <table>
+                    <tr>
+                        <th><a href="https://atcoder.jp/users/ei0124?lang=ja" target="_blank">AtCoder</a></th>
+                        <th class="acolor">
+                            <p>MaxRating  883</p>
+                            <p>AcceptedCountRank {{ countrank }}</p>
+                            <p>RatedPointSumRank {{ sumrank }}</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://codeforces.com/profile/ei0124" target="_blank">Codeforces</a></th>
+                        <th class="ccolor">
+                            <p>MaxRating {{ maxrating }}</p>
+                            <p>MaxRank {{ maxrank }}</p>
+                        </th>
+                    </tr>
+                </table>
             </div>
 
             <div class="cevents">
@@ -88,21 +105,6 @@
                         <th><a href="https://jphacks.com" target="_blank">JPHacks</a></th>
                         <th>
                             <p>2018福岡</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://atcoder.jp/users/ei0124?lang=ja" target="_blank">AtCoder</a></th>
-                        <th class="acolor">
-                            <p>MaxRating  883</p>
-                            <p>AcceptedCountRank {{ countrank }}</p>
-                            <p>RatedPointSumRank {{ sumrank }}</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://codeforces.com/profile/ei0124" target="_blank">Codeforces</a></th>
-                        <th class="ccolor">
-                            <p>MaxRating {{ maxrating }}</p>
-                            <p>MaxRank {{ maxrank }}</p>
                         </th>
                     </tr>
                 </table>
@@ -162,8 +164,8 @@
                         <th>カードとコインです．</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-chess-knight fa-fw cgame"></i>将棋，囲碁，麻雀</th>
-                        <th>物心付いた頃からやってます．</th>
+                        <th><i class="fas fa-chess-knight fa-fw cgame"></i>将棋，囲碁，麻雀, チェス</th>
+                        <th>物心付いた頃からやってます．<br>最近はチェスをしてます．</th>
                     </tr>
                     <tr>
                         <th><i class="fas fa-cookie fa-fw ccook"></i>料理</th>

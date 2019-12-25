@@ -1,7 +1,6 @@
 var app = new Vue({
     el: '#app',
     data: {
-        point: 0,
         countrank: 0,
         sumrank: 0,
 
