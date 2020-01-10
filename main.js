@@ -17,6 +17,7 @@ var app = new Vue({
 
         languages: [
             { lang: "Creo", src: "./images/Creo.png", url: "https://www.ptc.com/ja/products/cad/creo"},
+            { lang: "LTspice", src: "./images/LTspice.png", url: "https://www.ltspice.jp"},
             { lang: "KiCAD", src: "./images/Kicad.png", url: "https://www.kicad-pcb.org"},
             { lang: "Blender", src: "./images/Blender.png", url: "https://www.blender.org"},
             { lang: "C/C++", src: "./images/C++.png", url: "https://www.kicad-pcb.org"},
