@@ -48,6 +48,8 @@ table th,table td{
 .header {
     background-color: white;
     height: 90px;
+    position: sticky;
+    top: 0;
     /*
     position: fixed;
     top: 0;
