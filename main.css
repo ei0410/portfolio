@@ -31,7 +31,6 @@ table{
   
 table tr{
     border-bottom: 1px solid #eee;
-    cursor: pointer;
 }
   
 table tr:hover{
@@ -50,12 +49,6 @@ table th,table td{
     height: 90px;
     position: sticky;
     top: 0;
-    /*
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    */
 }
 
 .header-logo {
@@ -65,7 +58,6 @@ table th,table td{
 }
 
 .header-list {
-    /*float: right;*/
     display: flex;
 }
 
@@ -180,4 +172,19 @@ table th,table td{
 .v-enter {
   opacity: 0;
   transform: translateY(-20px);
+}
+button {
+  font-size: 18px;
+  width: 160px;
+  text-decoration: none;
+  text-align: center;
+  color: #1B1B1B;
+  background: #fff;
+  border:1px solid #fff;
+}
+
+button:hover {
+  background: #F2F2F2;
+  cursor: pointer;
+  text-decoration: none;
 }

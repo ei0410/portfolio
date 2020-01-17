@@ -134,7 +134,11 @@
                     <tr>
                         <th>
                             <h2>Robots</h2>
-                            <p>初めて作ったロボットです．<br>これがきっかけで技術の分野に進むことを決めました．</p>
+                            <!--<p>初めて作ったロボットです．<br>これがきっかけで技術の分野に進むことを決めました．</p>-->
+                            <button v-on:click="roboshow=!roboshow">show list</button>
+                            <div v-show="roboshow">
+                                <a href="https://github.com/ei0410/Creo/blob/master/iphone/iphone.stl" target="_blank">iPhone Case</a>
+                            </div>
                         </th>
                         <th>
                             <img src="./images/Robot1.png">
@@ -146,14 +150,21 @@
                         </th>
                         <th>
                             <h2>Electronics</h2>
-                            <p>自作基板のモータードライバです．<br>アナログ回路はこれで勉強しました．</p>
+                            <!--<p>自作基板のモータードライバです．<br>アナログ回路はこれで勉強しました．</p>-->
+                            <button v-on:click="elecshow=!elecshow">show list</button>
+                            <div v-show="elecshow">
+                                <a href="https://github.com/ei0410/FPGA/tree/master/atlys/practice" target="_blank">FPGA</a>
+                            </div>
                         </th>
                     </tr>
                     <tr>
                         <th>
                             <h2>Programming</h2>
-                            <p>アート作品の一つです．<br>セルグリッドオートマトンと呼ばれるものです．</p>
-                            <a href="https://ei0124page.glitch.me/" target="_blank">AR作品のリンク<br>hiroマーカーをかざしてください<br>あるオブジェクトが表示されます</a>
+                            <!--<p>アート作品の一つです．<br>セルグリッドオートマトンと呼ばれるものです．</p>-->
+                            <button v-on:click="progshow=!progshow">show list</button>
+                            <div v-show="progshow">
+                                <a href="https://ei0124page.glitch.me/" target="_blank">AR</a>
+                            </div>
                         </th>
                         <th>
                             <img src="./images/Program1.png">
