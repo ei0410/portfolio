@@ -16,18 +16,18 @@ var app = new Vue({
         ],
 
         languages: [
-            { lang: "Creo", src: "./images/Creo.png", url: "https://www.ptc.com/ja/products/cad/creo"},
-            { lang: "LTspice", src: "./images/LTspice.png", url: "https://www.ltspice.jp"},
-            { lang: "KiCAD", src: "./images/Kicad.png", url: "https://www.kicad-pcb.org"},
-            { lang: "Blender", src: "./images/Blender.png", url: "https://www.blender.org"},
-            { lang: "C/C++", src: "./images/C++.png", url: "https://www.kicad-pcb.org"},
-            { lang: "Python", src: "./images/Python.png", url: "https://www.python.jp"},
-            { lang: "Ruby on Rails", src: "./images/Rails.png", url: "https://rubyonrails.org"},
-            { lang: "Vue.js", src: "./images/Vue.png", url: "https://jp.vuejs.org/index.html"},
-            { lang: "ROS", src: "./images/ROS.png", url: "http://wiki.ros.org"},
-            { lang: "Arduino", src: "./images/Arduino.png", url: "https://www.arduino.cc"},
-            { lang: "Processing", src: "./images/Processing.png", url: "https://processing.org"},
-            { lang: "Verilog", src: "./images/Verilog.png", url: "https://ja.wikipedia.org/wiki/Verilog"},
+            { id: 1, lang: "Creo", src: "./images/Creo.png", url: "https://www.ptc.com/ja/products/cad/creo"},
+            { id: 2, lang: "LTspice", src: "./images/LTspice.png", url: "https://www.ltspice.jp"},
+            { id: 3, lang: "KiCAD", src: "./images/Kicad.png", url: "https://www.kicad-pcb.org"},
+            { id: 4, lang: "Blender", src: "./images/Blender.png", url: "https://www.blender.org"},
+            { id: 5, lang: "C/C++", src: "./images/C++.png", url: "https://www.kicad-pcb.org"},
+            { id: 6, lang: "Python", src: "./images/Python.png", url: "https://www.python.jp"},
+            { id: 7, lang: "Ruby on Rails", src: "./images/Rails.png", url: "https://rubyonrails.org"},
+            { id: 8, lang: "Vue.js", src: "./images/Vue.png", url: "https://jp.vuejs.org/index.html"},
+            { id: 9, lang: "ROS", src: "./images/ROS.png", url: "http://wiki.ros.org"},
+            { id: 10, lang: "Arduino", src: "./images/Arduino.png", url: "https://www.arduino.cc"},
+            { id: 11, lang: "Processing", src: "./images/Processing.png", url: "https://processing.org"},
+            { id: 12, lang: "Verilog", src: "./images/Verilog.png", url: "https://ja.wikipedia.org/wiki/Verilog"},
         ],
 
         linklist: [
@@ -64,5 +64,12 @@ var app = new Vue({
             this.maxrating = err
             this.maxrank = err
         });
+    },
+    methods: {
+        beforeEnter(el) {
+          this.$nextTick(() => {
+              el.style.transitionDelay = 150 * parseInt(el.dataset.index, 10) + 'ms'
+          })
+        },
     }
 })

@@ -64,8 +64,11 @@
                     <h1 class="section-style">Skills</h1>
                 </a>
                 <div>
-                    <a v-for="item in languages" v-bind:href="item.url" target="_blank"><img class="imgs" v-bind:src="item.src" v-bind:alt="item.url" border="0"></a>
+                    <transition-group appear tag="div" @before-enter="beforeEnter">
+                        <a v-for="(item, index) in languages" :data-index="index" :key="item" v-bind:href="item.url" target="_blank"><img class="imgs" v-bind:src="item.src" v-bind:alt="item.url" border="0"></a>
+                    </transition-group>
                 </div>
+
                 <table>
                     <tr>
                         <th><a href="https://atcoder.jp/users/ei0124?lang=ja" target="_blank">AtCoder</a></th>

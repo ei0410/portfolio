@@ -172,3 +172,12 @@ table th,table td{
     padding: 21px 0;
     display: none;
 }
+
+.v-enter-active {
+  transition: opacity 1s, transform 1s;
+}
+
+.v-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
