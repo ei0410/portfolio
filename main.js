@@ -34,6 +34,17 @@ var app = new Vue({
             { id: 12, src: "./images/Vue.png", url: "https://jp.vuejs.org/index.html"},
         ],
 
+        robolist: [
+            { id: 1, url: "https://github.com/ei0410/Creo/blob/master/iphone/iphone.stl", text: "iPhone Case"},
+            //{ id: 2, url: "https://github.com/ei0410/Creo/blob/master/iphone2/iphone.stl", text: "iPhone Cases2"},
+        ],
+        eleclist: [
+            { id: 1, url: "https://github.com/ei0410/FPGA/tree/master/atlys/practice", text: "FPGA"},
+        ],
+        proglist: [
+            { id: 1, url: "https://ei0124page.glitch.me/", text: "AR"},
+        ],
+
         linklist: [
             { id: 1, src: "./images/Twitter.png", url: "https://twitter.com/ei01241"},
             { id: 2, src: "./images/Instagram.png", url: "https://instagram.com/ei01241"},

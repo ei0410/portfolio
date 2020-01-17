@@ -82,11 +82,13 @@ table th,table td{
 }
 
 .acolor {
-    background-color: #00FF99;
+    /*background-color: #00FF99;*/
+    color: green;
 }
 
 .ccolor {
-    background-color: #99FFFF;
+    /*background-color: #99FFFF;*/
+    color: skyblue;
 }
 
 .center {
