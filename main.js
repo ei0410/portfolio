@@ -7,6 +7,10 @@ var app = new Vue({
         maxrating: 0,
         maxrank: 0,
 
+        robotshow: true,
+        elecshow: true,
+        progshow: true,
+
         contentslist: [
             { id: 1, url: "#about", text: "About"},
             { id: 2, url: "#skills", text: "Skills"},
