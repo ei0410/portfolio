@@ -16,7 +16,7 @@ var app = new Vue({
         ],
 
         languages: [
-            { id: 1, src: "./images/creo.png", url: "https://www.ptc.com/ja/products/cad/creo"},
+            { id: 1, src: "./images/Creo.png", url: "https://www.ptc.com/ja/products/cad/creo"},
             { id: 2, src: "./images/LTspice.png", url: "https://www.ltspice.jp"},
             { id: 3, src: "./images/Kicad.png", url: "https://www.kicad-pcb.org"},
             { id: 4, src: "./images/Blender.png", url: "https://www.blender.org"},
