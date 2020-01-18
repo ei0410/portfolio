@@ -141,7 +141,7 @@
                                 <a href="https://github.com/ei0410/Creo/blob/master/iphone/iphone.stl" target="_blank">iPhone Case</a>
                             </div>
                             -->
-                            <transition-group v-show="roboshow" appear tag="div" @before-enter="beforeEnter">
+                            <transition-group v-if="roboshow" appear tag="div" @before-enter="beforeEnter">
                                 <a v-for="(item, index) in robolist" :data-index="index" :key="item" v-bind:href="item.url" target="_blank">{{ item.text }}</a>
                             </transition-group>
                         </th>
@@ -162,7 +162,7 @@
                                 <a href="https://github.com/ei0410/FPGA/tree/master/atlys/practice" target="_blank">FPGA</a>
                             </div>
                             -->
-                            <transition-group v-show="elecshow" appear tag="div" @before-enter="beforeEnter">
+                            <transition-group v-if="elecshow" appear tag="div" @before-enter="beforeEnter">
                                 <a v-for="(item, index) in eleclist" :data-index="index" :key="item" v-bind:href="item.url" target="_blank">{{ item.text }}</a>
                             </transition-group>
                         </th>
@@ -177,7 +177,7 @@
                                 <a href="https://ei0124page.glitch.me/" target="_blank">AR</a>
                             </div>
                             -->
-                            <transition-group v-show="progshow" appear tag="div" @before-enter="beforeEnter">
+                            <transition-group v-if="progshow" appear tag="div" @before-enter="beforeEnter">
                                 <a v-for="(item, index) in proglist" :data-index="index" :key="item" v-bind:href="item.url" target="_blank">{{ item.text }}</a>
                             </transition-group>
                         </th>
