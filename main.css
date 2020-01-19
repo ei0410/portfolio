@@ -12,8 +12,8 @@ a {
 }
 
 li {
+    display: inline-block;
     list-style: none;
-    float: left;
     padding: 32px 20px;
 }
 
@@ -175,6 +175,7 @@ table th,table td{
   opacity: 0;
   transform: translateY(-20px);
 }
+
 button {
   font-size: 18px;
   width: 160px;
@@ -189,4 +190,8 @@ button:hover {
   background: #F2F2F2;
   cursor: pointer;
   text-decoration: none;
+}
+
+em {
+    color: #333;
 }
