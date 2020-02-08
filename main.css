@@ -44,7 +44,7 @@ table th,table td{
     padding: 15px 0;
 }
 
-.header {
+header {
     z-index: 100;
     background-color: white;
     height: 90px;
@@ -67,7 +67,7 @@ table th,table td{
     flex: auto;
 }
 
-.main {
+main {
 
 }
 
@@ -100,7 +100,7 @@ table th,table td{
     text-align: center;
 }
 
-.footer {
+footer {
     background-color: white;
 }
 
@@ -114,10 +114,10 @@ table th,table td{
     float: right;
 }
 
-.footer img {
-    width: 80px;
-    height: 80px;
-    padding: 10px;
+footer img {
+    width: 48px;
+    height: 48px;
+    padding: 4px;
 }
 
 .cname {
