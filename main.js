@@ -12,11 +12,13 @@ var app = new Vue({
         progshow: false,
 
         contentslist: [
-            { id: 1, url: "#about", text: "About"},
-            { id: 2, url: "#skills", text: "Skills"},
-            { id: 3, url: "#events", text: "Events"},
-            { id: 4, url: "#works", text: "Works"},
-            { id: 5, url: "#interests", text: "Interests"},
+            { id: 1, url: "#top", text: "Top"},
+            { id: 2, url: "#about", text: "About"},
+            { id: 3, url: "#skills", text: "Skills"},
+            { id: 4, url: "#events", text: "Events"},
+            { id: 5, url: "#works", text: "Works"},
+            { id: 6, url: "#interests", text: "Interests"},
+	    { id: 7, url: "#links", text: "Links"},
         ],
 
         languages: [

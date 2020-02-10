@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -14,7 +14,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>ei0124 Portfolio</title>
+
     <link href="main.css" rel="stylesheet">
     <link rel="stylesheet" href="responsive.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -24,8 +26,7 @@
 
 <body>
     <div id="app">
-        <header>
-            <div class="header-logo">ei0124 Portfolio</div>
+        <header>    
             <div class="header-list">
                 <transition-group appear tag="div" @before-enter="beforeEnter">
                     <li v-for="(item, index) in contentslist" :data-index="index" :key="item"><a v-bind:href="item.url">{{item.text}}</a></li>
@@ -35,134 +36,102 @@
 
         <!--<img src="./images/jigglypuffs.png">-->
 
-        <p></p>
         <div class="top">
             welcome to ei0124 portfolio!
         </div>
 
         <main>
-            <div class="cabout">
+            <div class="center">
                 <a name="about">
                     <h1 class="section-style">About</h1>
                 </a>
                 <table>
                     <tr>
-                        <th><i class="fas fa-signature fa-fw cname"></i>Name</th>
+                        <th class="th-left"><i class="fas fa-signature fa-fw gray"></i>Name</th>
                         <th>ei0124</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-birthday-cake fa-fw ccake"></i>Birthday</th>
+                        <th class="th-left"><i class="fas fa-birthday-cake fa-fw maroon"></i>Birthday</th>
                         <th>1996/4/10</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-user-graduate fa-fw cstudy"></i>Study</th>
+                        <th class="th-left"><i class="fas fa-user-graduate fa-fw skyblue"></i>Univercity</th>
+                        <th>Kagoshima</th>
+                    </tr>
+                    <tr>
+                        <th class="th-left"><i class="fas fa-book-open fa-fw navy"></i>Study</th>
                         <th>Robotics</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-envelope fa-fw cemail"></i>Email</th>
+                        <th class="th-left"><i class="fas fa-envelope fa-fw skyblue"></i>Email</th>
                         <th>chronolavos0124[at]gmail.com</th>
                     </tr>
                 </table>
             </div>
 
-            <div class="cskills">
+            <div class="center">
                 <a id="skills">
                     <h1 class="section-style">Skills</h1>
                 </a>
+
+                <h2 class="subtitle">Languages</h2>
+
                 <div>
                     <transition-group appear tag="div" @before-enter="beforeEnter">
                         <a v-for="(item, index) in languages" :data-index="index" :key="item" v-bind:href="item.url" target="_blank"><img class="imgs" v-bind:src="item.src" v-bind:alt="item.url" border="0"></a>
                     </transition-group>
                 </div>
 
+                <h2 class="subtitle">Competitive Programming</h2>
+
                 <table>
                     <tr>
                         <th><a href="https://atcoder.jp/users/ei0124?lang=ja" target="_blank">AtCoder</a></th>
-                        <th>
-                            <p class="acolor">MaxRating  883</p>
-                            <p>AcceptedCountRank {{ countrank }}</p>
-                            <p>RatedPointSumRank {{ sumrank }}</p>
-                        </th>
+                        <th class="atcoder-color"> MaxRating  883</th>
                     </tr>
                     <tr>
                         <th><a href="https://codeforces.com/profile/ei0124" target="_blank">Codeforces</a></th>
-                        <th>
-                            <p class="ccolor">MaxRating {{ maxrating }}</p>
-                            <p>MaxRank {{ maxrank }}</p>
-                        </th>
+                        <th class="codeforces-color"> MaxRating {{ maxrating }}</th>
                     </tr>
                 </table>
             </div>
 
-            <div class="cevents">
+            <div class="center">
                 <a id="events">
                     <h1 class="section-style">Events</h1>
                 </a>
-                <!--
-                <table>
-                    <tr>
-                        <th><a href="http://www.official-robocon.com" target="_blank">ROBOCON</a></th>
-                        <th>
-                            <p>2015</p>
-                            <p>2016</p>
-                            <p>2017</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://www.security-camp.or.jp" target="_blank">SECCAMP</a></th>
-                        <th>
-                            <p>2018全国</p>
-                            <p>2019全国</p>
-                            <p>2019福岡</p>
-                            <p>2019長崎</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://codeblue.jp/2019/en" target="_blank">CODEBLUE</a></th>
-                        <th>
-                            <p>2019</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://jphacks.com" target="_blank">JPHACKS</a></th>
-                        <th>
-                            <p>2018福岡</p>
-                        </th>
-                    </tr>
-                </table>
-                -->
                 <div class="timeline">
                     <div class="container left">
                         <div class="content">
-                            <h2>2015</h2>
+                            <h1>2015</h1>
                             <p><a href="https://www.nhk.or.jp/robocon/rbcn2015/d_index.html" target="_blank">ROBOCON</a></p>
                             <p><a href="https://sites.google.com/site/summerrobocon/history" target="_blank">夏ロボ</a></p>
                         </div>
                     </div>
                     <div class="container right">
                         <div class="content">
-                            <h2>2016</h2>
+                            <h1>2016</h1>
                             <p><a href="https://www.nhk.or.jp/robocon/rbcn2016/d_index.html" target="_blank">ROBOCON</a></p>
                             <p><a href="https://sites.google.com/site/summerrobocon/history" target="_blank">夏ロボ</a></p>
                         </div>
                     </div>
                     <div class="container left">
                         <div class="content">
-                            <h2>2017</h2>
+                            <h1>2017</h1>
                             <p><a href="https://www.nhk.or.jp/robocon/2017/gakusei/index.html" target="_blank">ROBOCON</a></p>
                             <p><a href="https://sites.google.com/site/summerrobocon/history" target="_blank">夏ロボ</a></p>
                         </div>
                     </div>
                     <div class="container right">
                         <div class="content">
-                            <h2>2018</h2>
+                            <h1>2018</h1>
                             <p><a href="https://www.ipa.go.jp/jinzai/camp/2018/zenkoku2018_index.html" target="_blank">SECCAMP全国</a></p>
                             <p><a href="https://jphacks.com/2018/" target="_blank">JPHACKS福岡</a></p>
                         </div>
                     </div>
                     <div class="container left">
                         <div class="content">
-                            <h2>2019</h2>
+                            <h1>2019</h1>
                             <p><a href="https://www.ipa.go.jp/jinzai/camp/2019/zenkoku2019_index.html" target="_blank">SECCAMP全国</a></p>
                             <p><a href="https://www.security-camp.or.jp/minicamp/fukuoka2019a.html" target="_blank">SECCAMP福岡</a></p>
                             <p><a href="https://www.security-camp.or.jp/minicamp/nagasaki2019.html" target="_blank">SECCAMP長崎</a></p>
@@ -172,114 +141,81 @@
                 </div>
             </div>
 
-            <div class="cworks">
+            <div class="center">
                 <a id="works">
                     <h1 class="section-style">Works</h1>
                 </a>
-                <table>
-                    <tr>
-                        <th>
-                            <h2>Robots</h2>
-                            <!--<p>初めて作ったロボットです．<br>これがきっかけで技術の分野に進むことを決めました．</p>-->
-                            <button v-on:click="roboshow=!roboshow">show list</button>
-                            <!--
-                            <div v-show="roboshow">
-                                <a href="https://github.com/ei0410/Creo/blob/master/iphone/iphone.stl" target="_blank">iPhone Case</a>
-                            </div>
-                            -->
-                            <transition-group v-if="roboshow" appear tag="div" @before-enter="beforeEnter">
-                                <a v-for="(item, index) in robolist" :data-index="index" :key="item" v-bind:href="item.url" target="_blank">{{ item.text }}</a>
-                            </transition-group>
-                        </th>
-                        <th>
-                            <img src="./images/Robot1.png">
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <img src="./images/Circuit1.png">
-                        </th>
-                        <th>
-                            <h2>Electronics</h2>
-                            <!--<p>自作基板のモータードライバです．<br>アナログ回路はこれで勉強しました．</p>-->
-                            <button v-on:click="elecshow=!elecshow">show list</button>
-                            <!--
-                            <div v-show="elecshow">
-                                <a href="https://github.com/ei0410/FPGA/tree/master/atlys/practice" target="_blank">FPGA</a>
-                            </div>
-                            -->
-                            <transition-group v-if="elecshow" appear tag="div" @before-enter="beforeEnter">
-                                <a v-for="(item, index) in eleclist" :data-index="index" :key="item" v-bind:href="item.url" target="_blank">{{ item.text }}</a>
-                            </transition-group>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <h2>Programming</h2>
-                            <!--<p>アート作品の一つです．<br>セルグリッドオートマトンと呼ばれるものです．</p>-->
-                            <button v-on:click="progshow=!progshow">show list</button>
-                            <!--
-                            <div v-show="progshow">
-                                <a href="https://ei0124page.glitch.me/" target="_blank">AR</a>
-                            </div>
-                            -->
-                            <transition-group v-if="progshow" appear tag="div" @before-enter="beforeEnter">
-                                <a v-for="(item, index) in proglist" :data-index="index" :key="item" v-bind:href="item.url" target="_blank">{{ item.text }}</a>
-                            </transition-group>
-                        </th>
-                        <th>
-                            <img src="./images/Program1.png">
-                        </th>
-                    </tr>
-                </table>
+                <div class="work-img">
+                    <div class="work-margin">
+                        <img src="images/Robot1.png">
+                        <p class="work-p">掃除ロボット</p>
+                    </div>
+                    <div class="work-margin">
+                        <img src="images/Circuit1.png">
+                        <p class="work-p">モータドライバ</p>
+                    </div>
+                    <div class="work-margin">
+                        <img src="images/Program1.png">
+                        <p class="work-p">オートマトン</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="cinterests">
+            <div class="center">
                 <a id="interests">
                     <h1 class="section-style">Interests</h1>
                 </a>
                 <table>
                     <tr>
-                        <th><i class="fas fa-dumbbell fa-fw cmuscle"></i>筋トレ</th>
+                        <th class="th-left"><i class="fas fa-dumbbell fa-fw olive"></i>筋トレ</th>
                         <th>毎日やってます</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-laptop fa-fw ctech"></i>技術</th>
-                        <th>ハードからソフトまで興味があります</th>
+                        <th class="th-left"><i class="fas fa-laptop fa-fw silver"></i>技術</th>
+                        <th>ハードからソフトまでやります</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-magic fa-fw cmagic"></i>手品</th>
-                        <th>カード、コインが好きです</th>
+                        <th class="th-left"><i class="fas fa-magic fa-fw red"></i>手品</th>
+                        <th>カードとコインが好きです</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-chess-knight fa-fw cgame"></i>将棋，囲碁，麻雀, チェス</th>
+                        <th class="th-left"><i class="fas fa-chess-knight fa-fw gray"></i>将棋</th>
                         <th>物心付いた頃からやってます</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-cookie fa-fw ccook"></i>料理</th>
+                        <th class="th-left"><i class="fas fa-cookie fa-fw brown"></i>料理</th>
                         <th>お菓子が一番得意です</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-motorcycle fa-fw cbike"></i>バイク旅</th>
+                        <th class="th-left"><i class="fas fa-motorcycle fa-fw navy"></i>バイク旅</th>
                         <th>原付で出掛けます</th>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-tv fa-fw canime"></i>アニメ</th>
-                        <th>宝島、攻殻機動隊、ジョジョが好きです</th>
+                        <th class="th-left"><i class="fas fa-tv fa-fw silver"></i>アニメ</th>
+                        <th>攻殻機動隊が好きです</th>
                     </tr>
                 </table>
             </div>
         </main>
 
-        <footer>
-            <div class="footer-logo">Links</div>
-            <div class="footer-list">
-                <transition-group appear tag="ul" @before-enter="beforeEnter">
-                    <li v-for="(item, index) in linklist" :data-index="index" :key="item"><a v-bind:href="item.url" target="_blank"><img v-bind:src="item.src" v-bind:alt="item.url" border="0"></a></li>
-                </transition-group>
+        <footer class="center">
+            <a id="links">
+                <h1 class="section-style">Links</h1>
+            </a>
+            <ul class="footer-ul">
+                <li><a href="https://twitter.com/ei01241" target="_blank"><img src="images/Twitter.png" class="footer-img"></a></li>
+                <li><a href="https://www.instagram.com/ei01241" target="_blank"><img src="images/Instagram.png" class="footer-img"><a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100040398917098" target="_blank"><img src="images/Facebook.png" class="footer-img"></a></li>
+                <li><a href="https://github.com/ei0410" target="_blank"><img src="images/GitHub.png" class="footer-img"></a></li>
+                <li><a href="https://ei0124.blog.fc2.com" target="_blank"><img src="images/FC2.png" class="footer-img"></a></li>
+            </ul>
+	    
+            <div class="center">
+                <small>Last Update:2020/02/09 ©ei0124</small>
             </div>
         </footer>
     </div>
+
     <!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="main.js"></script>
