@@ -42,7 +42,7 @@ var app = new Vue({
             return response.json()
         })
         .then( json => {
-            this.maxrating = json.result[0].maxRating,
+            this.maxrating = json.result[0].maxRating
         })
         .catch( (err) => {
             this.maxrating = err
