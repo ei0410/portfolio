@@ -202,12 +202,9 @@
             <a id="links">
                 <h1 class="section-style">Links</h1>
             </a>
+
             <ul class="footer-ul">
-                <li><a href="https://twitter.com/ei01241" target="_blank"><img src="images/Twitter.png" class="footer-img"></a></li>
-                <li><a href="https://www.instagram.com/ei01241" target="_blank"><img src="images/Instagram.png" class="footer-img"><a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100040398917098" target="_blank"><img src="images/Facebook.png" class="footer-img"></a></li>
-                <li><a href="https://github.com/ei0410" target="_blank"><img src="images/GitHub.png" class="footer-img"></a></li>
-                <li><a href="https://ei0124.blog.fc2.com" target="_blank"><img src="images/FC2.png" class="footer-img"></a></li>
+                <li v-for="(item, index) in languages" :data-index="index" :key="item"><a v-bind:href="item.url" target="_blank"><img class="footer-img" v-bind:src="item.src" v-bind:alt="item.url" border="0"></a></li>
             </ul>
 	    
             <div class="center">
