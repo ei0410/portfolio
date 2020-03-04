@@ -28,7 +28,7 @@
     <div id="app">
         <header>    
             <div class="header-list">
-                <transition-group appear tag="div" @before-enter="beforeEnter">
+                <transition-group appear tag="ul" @before-enter="beforeEnter">
                     <li v-for="(item, index) in contentslist" :data-index="index" :key="item"><a v-bind:href="item.url">{{item.text}}</a></li>
                 </transition-group>
             </div>
@@ -185,6 +185,10 @@
                     <tr>
                         <th class="th-left"><i class="fas fa-cookie fa-fw brown"></i>料理</th>
                         <th>お菓子が一番得意です</th>
+                    </tr>
+                    <tr>
+                        <th class="th-left"><i class="fas fa-microphone fa-fw black"></i>カラオケ</th>
+                        <th>よく歌います</th>
                     </tr>
                     <tr>
                         <th class="th-left"><i class="fas fa-motorcycle fa-fw navy"></i>バイク旅</th>
