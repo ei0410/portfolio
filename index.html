@@ -28,7 +28,7 @@
     <div id="app">
         <header>    
             <div class="header-list">
-                <transition-group appear tag="ul" @before-enter="beforeEnter">
+                <transition-group appear tag="div" @before-enter="beforeEnter">
                     <li v-for="(item, index) in contentslist" :data-index="index" :key="item"><a v-bind:href="item.url">{{item.text}}</a></li>
                 </transition-group>
             </div>
